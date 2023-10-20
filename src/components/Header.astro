@@ -42,7 +42,11 @@ function showMenu(){
 }
 
 function close(){
-    burguerMenu.classList.add('hidden');
+    burguerMenu.classList.add('animate-jump-out', 'animate-once', 'animate-duration-300');
+    setTimeout(() => {
+        burguerMenu.classList.add('hidden');
+        burguerMenu.classList.remove('animate-jump-out', 'animate-once', 'animate-duration-300');
+    }, 300);
 }
 </script>
 
