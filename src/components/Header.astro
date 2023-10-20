@@ -38,6 +38,7 @@ function addEvents(){
 //funciones
 function showMenu(){
     burguerMenu.classList.remove('hidden');
+    burguerMenu.classList.add('animate-fade', 'animate-duration-500');
 }
 
 function close(){
@@ -77,9 +78,9 @@ function close(){
     
         <!--BURGUER -->
     
-        <div class="burguer-menu bg-white p-12 absolute right-0 top-0 h-screen hidden z-40">
+        <div class="burguer-menu bg-white p-12 absolute right-0 top-0 h-screen hidden z-40 rounded-l-[40px] border border-red-500">
             <button class="close-menu">
-                <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ef4444" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ef4444" fill="none" stroke-linecap="round" stroke-linejoin="round">
                     <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
                     <path d="M18 6l-12 12" />
                     <path d="M6 6l12 12" />
@@ -114,7 +115,7 @@ function close(){
                 </div>
             </nav>
 
-            <img src="/burguer-rolls.jpg" alt="rolls" class="mt-10 w-48 object-cover mx-auto">
+            <img src="/sushi.png" alt="sushi" class="mt-10 w-56 object-cover mx-auto">
         </div>
     </header>
 </Layout>
